@@ -26,9 +26,9 @@ mongoose.connect("mongodb+srv://maobakg:pWResSro3qdalaGq@cluster0.uidjjph.mongod
 const connection = mongoose.connection;
 
 
-connection.once('open', ()=>{
-	console.log("MongoDB database connection established successfully ");
-})
+// connection.once('open', ()=>{
+// 	console.log("MongoDB database connection established successfully ");
+// })
 
 // Allow requests from all domains
 app.use(function(req, res, next) {
