@@ -20,9 +20,9 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-const uri = process.env.DB_URI;
-//mongoose.connect("mongodb+srv://maobakg:pWResSro3qdalaGq@cluster0.uidjjph.mongodb.net/FinancialLog");
-mongoose.connect(uri);
+//const uri = process.env.DB_URI;
+mongoose.connect("mongodb+srv://maobakg:pWResSro3qdalaGq@cluster0.uidjjph.mongodb.net/FinancialLog");
+//mongoose.connect(uri);
 const connection = mongoose.connection;
 
 
